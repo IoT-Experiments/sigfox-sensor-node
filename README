@@ -1,0 +1,9 @@
+Read the full blog entry: https://www.iot-experiments.com/sigfox-sensor-node/
+
+# Fuses update @ 1Mhz
+`avrdude -c usbtiny -p t2313 -Uhfuse:w:0xDF:m -Uefuse:w:0xff:m -Ulfuse:w:0x64:m`
+
+# Sigfox module
+* Communication speed: 9600bps
+* Version: AX-Sigfox 1.1.0-ETSI (AT$I=0)
+* Get PAC: `AT$I=11` ==> 16 hex chars
